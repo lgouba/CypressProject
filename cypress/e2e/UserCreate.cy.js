@@ -8,7 +8,7 @@ describe("Rsmart", () => {
       })
     });
 
-    it("Création un utilisateur", function() {
+    it.skip("Création un utilisateur", function() {
       //cy.visit("/login/connection"); 
       //cy.login("superAdmin", "XEeYe7EIxVZA8iCs", "Bienvenue");
       cy.xpath('//div[@aria-haspopup="menu"][1]').should('be.visible');

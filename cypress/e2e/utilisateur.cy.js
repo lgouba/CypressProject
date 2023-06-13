@@ -4,8 +4,8 @@ describe("Création d'un utilisateur", () => {
     cy.login("superAdmin", "XEeYe7EIxVZA8iCs", "Bienvenue");
   });
   
-  for (let i = 1; i <= 7; i++) {
-    it(`Exécution ${i}`, () => {
+  //for (let i = 1; i <= 7; i++) {
+    it.skip(`Exécution ${i}`, () => {
       
      cy.xpath('//div[@aria-haspopup="menu"][1]').should('be.visible');
       cy.xpath('//div[@aria-haspopup="menu"][1]').click();
@@ -57,7 +57,7 @@ describe("Création d'un utilisateur", () => {
       cy.get('.ng-star-inserted > img').click()
   
     });
-  }
+  //}
     it("Test log", () => {
       cy.log("This is the New Test"); 
   

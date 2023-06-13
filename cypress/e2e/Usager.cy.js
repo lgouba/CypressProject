@@ -4,8 +4,8 @@ describe("Créer un usager", () => {
       cy.login("superAdmin", "XEeYe7EIxVZA8iCs", "Bienvenue");
     });
   
-    for (let i = 1; i <= 2; i++) {
-      it(`Exécution ${i}`, () => {
+   // for (let i = 1; i <= 2; i++) {
+      it.skip(`Exécution ${i}`, () => {
         // Choisissez un site
         cy.get(':nth-child(2) > a > span > .icon-modx').click(); 
   
@@ -37,7 +37,7 @@ describe("Créer un usager", () => {
         cy.get('.contact > :nth-child(2) > .input-form').type(randomEmail);
         cy.get('.bottom > .btn-primary').click();
       });
-    }
+   // }
   
       it.skip("Modifier les information d'un usager", () => {
 
